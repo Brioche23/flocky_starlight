@@ -1,5 +1,6 @@
 ---
 const {vimeoId, title, categorie} = Astro.props;
+
 ---
 
 <astro-vimeo data-message={vimeoId}  >
@@ -14,12 +15,13 @@ const {vimeoId, title, categorie} = Astro.props;
 
 <!-- <script is:inline src="https://player.vimeo.com/api/player.js"></script> -->
 <script>
+    import * as Player from "@vimeo/player/dist/player.js";
 
-import Player from '@vimeo/player';
 
 
     // Define the behaviour for our new type of HTML element.
   class AstroVimeo extends HTMLElement {
+    
     constructor() {
       super();
 
@@ -29,7 +31,7 @@ import Player from '@vimeo/player';
         id: message,
         loop: true,
         portrait:0,
-        muted:0,
+        muted:1,
         autoplay:1,
         autopause:0,
         title:0,
@@ -42,7 +44,7 @@ import Player from '@vimeo/player';
     const player = new Player(message, options);
     
 
-//    const playButton = this.querySelector('button.play-button');
+   const playButton = this.querySelector('button.play-button');
 //    const muteButton = this.querySelector('button.mute-button');
 
 //     playButton.addEventListener("click", () => {
