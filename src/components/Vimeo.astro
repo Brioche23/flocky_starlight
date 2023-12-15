@@ -37,22 +37,23 @@ const {vimeoId, title, categorie} = Astro.props;
 
     // const iframe = document.querySelector(message);
     const player = new Vimeo.Player(message, options);
+    
 
-   const playButton = this.querySelector('button.play-button');
+//    const playButton = this.querySelector('button.play-button');
 //    const muteButton = this.querySelector('button.mute-button');
 
-    playButton.addEventListener("click", () => {
-      if(playButton.innerHTML == "PLAY" ){
+//     playButton.addEventListener("click", () => {
+//       if(playButton.innerHTML == "PLAY" ){
 
-        player.play();
-        playButton.innerHTML = "PAUSE"; 
-      }
-      else{
-        player.pause();
-        playButton.innerHTML = "PLAY"; 
+//         player.play();
+//         playButton.innerHTML = "PAUSE"; 
+//       }
+//       else{
+//         player.pause();
+//         playButton.innerHTML = "PLAY"; 
 
-      }
-});
+//       }
+// });
 
 //     muteButton.addEventListener("click", () => {
 //       if(muteButton.innerHTML == "MUTE" ){
