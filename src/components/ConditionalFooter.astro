@@ -1,0 +1,69 @@
+---
+import type { Props } from '@astrojs/starlight/props';
+import Default from '@astrojs/starlight/components/Footer.astro';
+
+const isHomepage = Astro.props.slug === '';
+
+const teachers = [
+    {
+    name: "Marco Ajovalasit",
+    },
+    {
+    name: "Marianna Ciancia",
+    },
+ 
+]
+const team = [
+    {
+    name: "Alessio Brioschi",
+    web:"https://www.alessiobrioschi.it"
+    },
+    {
+    name: "Defne Kocamustafaogoullari",
+    web:""
+    },
+    {
+    name: "Zeynep Errol",
+    web:""
+    },
+    {
+    name: "Das Mayukh",
+    web:""
+    },
+    {
+    name: "Gianluca Zoni",
+    web:""
+    },
+]
+---
+
+{
+  isHomepage ? (
+    <footer>
+        <div>
+            <p class="text-red-600">The Flocky Team</p>
+            <ul id="team" class="flex flex-wrap list-none px-0">
+                {team.map((t) => (
+                    <li class="after:content-['–'] after:px-2 last:after:content-[''] "><a href={t.web} target="_blank">{t.name}</a></li>
+                ))}
+            </ul>
+        </div>
+        <div class="pt-5">
+            <p class="text-red-600">The Teaching Team</p>
+            <ul id="team" class="flex flex-wrap list-none px-0">
+                {teachers.map((t) => (
+                    <li class="after:content-['–'] after:px-2 last:after:content-[''] "><a href={t.web} target="_blank">{t.name}</a></li>
+                ))}
+            </ul>
+        </div>
+        <div class="pt-5">
+            <p>Project Made for the Final Design Studio Lab</p>
+            <p>Digital & Interaction Design A.A. 2023/2024</p>        
+        </div>
+    </footer>
+  ) : (
+    <Default {...Astro.props}>
+      <slot />
+    </Default>
+  )
+}

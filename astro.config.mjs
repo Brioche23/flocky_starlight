@@ -7,6 +7,15 @@ export default defineConfig({
   integrations: [
     starlight({
       title: "Flocky Report",
+      logo: {
+        light: "./src/assets/logo.svg",
+        dark: "./src/assets/logo-dark.svg",
+        replacesTitle: true,
+      },
+      components: {
+        // Override the default `SocialIcons` component.
+        Footer: "./src/components/ConditionalFooter.astro",
+      },
       customCss: [
         // Relative path to your custom CSS file
         "./src/styles/custom.css",
