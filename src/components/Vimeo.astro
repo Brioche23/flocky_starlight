@@ -39,7 +39,7 @@ const {vimeoId, title, categorie} = Astro.props;
     const player = new Vimeo.Player(message, options);
 
    const playButton = this.querySelector('button.play-button');
-   const muteButton = this.querySelector('button.mute-button');
+//    const muteButton = this.querySelector('button.mute-button');
 
     playButton.addEventListener("click", () => {
       if(playButton.innerHTML == "PLAY" ){
@@ -54,18 +54,18 @@ const {vimeoId, title, categorie} = Astro.props;
       }
 });
 
-    muteButton.addEventListener("click", () => {
-      if(muteButton.innerHTML == "MUTE" ){
+//     muteButton.addEventListener("click", () => {
+//       if(muteButton.innerHTML == "MUTE" ){
 
-        player.setVolume(0);
-        muteButton.innerHTML = "UNMUTE"; 
-      }
-      else{
-        player.setVolume(1);
-        muteButton.innerHTML = "MUTE"; 
+//         player.setVolume(0);
+//         muteButton.innerHTML = "UNMUTE"; 
+//       }
+//       else{
+//         player.setVolume(1);
+//         muteButton.innerHTML = "MUTE"; 
 
-      }
-});
+//       }
+// });
 
     
 

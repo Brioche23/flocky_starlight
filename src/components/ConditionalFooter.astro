@@ -52,7 +52,7 @@ const team = [
             <p class="text-red-600  font-bold">The Teaching Team</p>
             <ul id="team" class="flex flex-wrap list-none px-0">
                 {teachers.map((t) => (
-                    <li class="after:content-['–']  after:px-2 last:after:content-[''] "><a href={t.web} target="_blank">{t.name}</a></li>
+                    <li class="after:content-['–']  after:px-2 last:after:content-[''] ">{t.name}</li>
                 ))}
             </ul>
         </div>
