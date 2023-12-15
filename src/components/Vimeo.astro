@@ -1,12 +1,12 @@
 ---
-const {vimeoId, title, categorie} = Astro.props;
+const {vimeoId, } = Astro.props;
 
 ---
 
-<astro-vimeo data-message={vimeoId}  >
+<astro-vimeo data-message={vimeoId}>
 
-    <div id={vimeoId} class="video-wrapper relative bg-flockyred rounded-xl ">
-      <button class="play-button absolute top-5 right-5 z-10 text-xs rounded-md">PAUSE</button>
+    <div id={vimeoId} class="video-wrapper relative bg-flockyred rounded-xl mt-5">
+      <!-- <button class="play-button absolute top-5 right-5 z-10 text-xs rounded-md">PAUSE</button> -->
       <!-- <button class="mute-button absolute top-10 right-5 z-10">MUTE</button> -->
     </div>
     <slot/>
@@ -44,7 +44,7 @@ const {vimeoId, title, categorie} = Astro.props;
     const player = new Player(message, options);
     
 
-   const playButton = this.querySelector('button.play-button');
+  //  const playButton = this.querySelector('button.play-button');
 //    const muteButton = this.querySelector('button.mute-button');
 
 //     playButton.addEventListener("click", () => {

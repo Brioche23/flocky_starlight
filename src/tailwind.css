@@ -17,3 +17,7 @@ img,
 iframe {
   @apply rounded-xl;
 }
+
+a {
+  @apply text-flockyred;
+}
