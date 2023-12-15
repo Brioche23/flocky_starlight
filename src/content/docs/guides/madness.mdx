@@ -3,18 +3,26 @@ title: Madness
 description: A guide in my new Starlight docs site.
 ---
 
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+import Vimeo from "../../../components/Vimeo.astro";
+
 import Video from "../../../assets/img/madness/Bivacco_Cam.webm";
 
 # Project Madness
 
-<video width="" height="" class="h-auto w-full" autoplay>
-  <source src={Video} type="video/webm" />
-</video>
+<Vimeo vimeoId="895001344">_Demo Madness Behind the Scenes_</Vimeo>
 
 ## The Stand
 
 ![Madness Stand](../../../assets/img/madness/Madness_Stand.png)
 _Madness Stand_
+
+<Tabs>
+  <TabItem label="01 - Intro">Sirius, Vega, Betelgeuse</TabItem>
+  <TabItem label="02 - Poster">Io, Europa, Ganymede</TabItem>
+  <TabItem label="03 - Demo">Io, Europa, Ganymede</TabItem>
+  <TabItem label="04 - Feedbacks">Io, Europa, Ganymede</TabItem>
+</Tabs>
 
 ## Feedbacks
 

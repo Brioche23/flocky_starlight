@@ -13,6 +13,13 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "GT MaruEmoji";
+  src: url("/fonts/GT Maru Emoji Black White..woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 /* @font-face {
   font-family: "GT Maru Mega";
   src: url("/fonts/GT-Maru-Mega-Mini-Outline.woff") format("woff");

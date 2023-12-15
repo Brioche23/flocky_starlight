@@ -30,9 +30,12 @@ export default {
         accent,
         // Your preferred gray scale. Zinc is closest to Starlight’s defaults.
         gray,
+        cream: "#F7F8E8",
+        flockyred: "#CE2834",
       },
       fontFamily: {
         sans: ["GT Maru", "Inter", ...defaultTheme.fontFamily.sans],
+        emoji: ["GT Maru Emoji", "Inter", ...defaultTheme.fontFamily.sans],
       },
     },
   },

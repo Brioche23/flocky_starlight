@@ -7,6 +7,13 @@ Add additional Tailwind styles to this file, for example with @layer:
 https://tailwindcss.com/docs/adding-custom-styles#using-css-and-layer
 */
 
-img {
-  @apply rounded-lg;
+body,
+#starlight__sidebar {
+  @apply bg-cream dark:bg-gray-800;
+}
+
+img,
+.card,
+iframe {
+  @apply rounded-xl;
 }

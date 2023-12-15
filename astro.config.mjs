@@ -15,11 +15,13 @@ export default defineConfig({
       components: {
         // Override the default `SocialIcons` component.
         Footer: "./src/components/ConditionalFooter.astro",
+        Bubble: "./src/components/Bubble.astro",
       },
       customCss: [
         // Relative path to your custom CSS file
         "./src/styles/custom.css",
       ],
+      customCss: ["./src/tailwind.css"],
       social: {
         github: "https://github.com/withastro/starlight",
       },
@@ -33,7 +35,6 @@ export default defineConfig({
           autogenerate: { directory: "reference" },
         },
       ],
-      customCss: ["./src/tailwind.css"],
     }),
     tailwind({ applyBaseStyles: false }),
   ],

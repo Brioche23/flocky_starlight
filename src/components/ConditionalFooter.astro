@@ -39,21 +39,28 @@ const team = [
 
 {
   isHomepage ? (
-    <footer>
+    <footer class="border-t border-red-600 pt-5">
         <div>
-            <p class="text-red-600">The Flocky Team</p>
+            <p class="text-red-600 font-bold">The Flocky Team</p>
             <ul id="team" class="flex flex-wrap list-none px-0">
                 {team.map((t) => (
-                    <li class="after:content-['–'] after:px-2 last:after:content-[''] "><a href={t.web} target="_blank">{t.name}</a></li>
+                    <li class="after:content-['🥰'] after:font-emoji after:px-2 last:after:content-[''] "><a href={t.web} target="_blank">{t.name}</a></li>
                 ))}
             </ul>
         </div>
         <div class="pt-5">
-            <p class="text-red-600">The Teaching Team</p>
+            <p class="text-red-600  font-bold">The Teaching Team</p>
             <ul id="team" class="flex flex-wrap list-none px-0">
                 {teachers.map((t) => (
-                    <li class="after:content-['–'] after:px-2 last:after:content-[''] "><a href={t.web} target="_blank">{t.name}</a></li>
+                    <li class="after:content-['–']  after:px-2 last:after:content-[''] "><a href={t.web} target="_blank">{t.name}</a></li>
                 ))}
+            </ul>
+        </div>
+        <div class="pt-5">
+            <p class="text-red-600  font-bold"> <span class="font-emoji">🤍</span> Special Thanks to <span class="font-emoji">🤍</span></p>
+            <ul id="team" class="flex flex-wrap list-none px-0">
+                
+                    <li class="">Davide Lovino and the whole RunChallenge family</li>
             </ul>
         </div>
         <div class="pt-5">

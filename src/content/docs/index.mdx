@@ -19,13 +19,24 @@ hero:
 ---
 
 import { Card, CardGrid } from "@astrojs/starlight/components";
+import Bubble from "../../components/Bubble.astro";
 
  <Card title="Abstract" icon="pencil">
- This project explores a new way to enhance the running experience using a natural interaction. Running in groups can be stressful for trainers and runners, especially when the training is performed in difficult conditions, such as very crowded cities or parks after sunset. For a trainer can be difficult to make sure that everyone stays within the group.
+    This project explores a new way to enhance the running experience using a natural interaction. Running in groups can be stressful for trainers and runners, especially when the training is performed in difficult conditions, such as very crowded cities or parks after sunset. For a trainer can be difficult to make sure that everyone stays within the group.
 
-Flocky is a phygital system made to bring an additional element of safety and control during group running sessions, both for Runners and for Trainers. It makes it possible to track the position and the status of every runner in a group.
+    Flocky is a phygital system made to bring an additional element of safety and control during group running sessions, both for Runners and for Trainers. It makes it possible to track the position and the status of every runner in a group.
 
-Thanks to this system Runners and Trainers can focus more on the act of running and socializing during the training sessions. The data gathered can be used by associations to promote themselves by validating their activity.
+    Thanks to this system Runners and Trainers can focus more on the act of running and socializing during the training sessions. The data gathered can be used by associations to promote themselves by validating their activity.
+
+### Keywords
+
+<div class="md:flex flex-wrap sm:place-content-between space-y-2 md:space-y-0 ">
+  <Bubble text="Flock Tracking" />
+  <Bubble text="Running" />
+  <Bubble text="Accessibility" />
+  <Bubble text="Design for Inclusivity" />
+  <Bubble text="Naturalness" />
+</div>
 
   </Card>
  <Card title="Context" icon="pencil">
@@ -58,17 +69,3 @@ The idea is to create a real-time tracking system of the group (the flock) that 
 The data gathered can also be used to better plan each training according to the group effort and, on a higher level, they can be used to validate the association’s activity towards sponsors.
 
   </Card>
-{/* <CardGrid stagger>
-  <Card title="Update content" icon="pencil">
-    Edit `src/content/docs/index.mdx` to see this page change.
-  </Card>
-  <Card title="Add new content" icon="add-document">
-    Add Markdown or MDX files to `src/content/docs` to create new pages.
-  </Card>
-  <Card title="Configure your site" icon="setting">
-    Edit your `sidebar` and other config in `astro.config.mjs`.
-  </Card>
-  <Card title="Read the docs" icon="open-book">
-    Learn more in [the Starlight Docs](https://starlight.astro.build/).
-  </Card>
-</CardGrid> */}
