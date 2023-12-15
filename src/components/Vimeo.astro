@@ -12,8 +12,11 @@ const {vimeoId, title, categorie} = Astro.props;
 </astro-vimeo>
 
 
-<script is:inline src="https://player.vimeo.com/api/player.js"></script>
+<!-- <script is:inline src="https://player.vimeo.com/api/player.js"></script> -->
 <script>
+
+import Player from '@vimeo/player';
+
 
     // Define the behaviour for our new type of HTML element.
   class AstroVimeo extends HTMLElement {
@@ -36,7 +39,7 @@ const {vimeoId, title, categorie} = Astro.props;
     };
 
     // const iframe = document.querySelector(message);
-    const player = new Vimeo.Player(message, options);
+    const player = new Player(message, options);
     
 
 //    const playButton = this.querySelector('button.play-button');
