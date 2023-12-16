@@ -2,6 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Maru";
+  src: url("../fonts/GT-Maru-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Maru";
+  src: url("../fonts/GT-Maru-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Maru Emoji";
+  src: url("../fonts/GT Maru Emoji Black White.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 /*
 Add additional Tailwind styles to this file, for example with @layer:
 https://tailwindcss.com/docs/adding-custom-styles#using-css-and-layer

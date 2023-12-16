@@ -1,40 +1,30 @@
 /* Register your custom font family and tell the browser where to find it. */
 @font-face {
-  font-family: "GT Maru";
-  src: url("../public/fonts/GT-Maru-Medium.woff") format("woff");
+  font-family: "Maru";
+  src: url("../fonts/GT-Maru-Medium.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
-  font-family: "GT Maru";
-  src: url("../public/fonts/GT-Maru-Bold.woff") format("woff");
+  font-family: "Maru";
+  src: url("../fonts/GT-Maru-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
-  font-family: "GT Maru Emoji";
-  src: url("../public/fonts/GT Maru Emoji Black White.woff2") format("woff2");
+  font-family: "Maru Emoji";
+  src: url("../fonts/GT Maru Emoji Black White.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
-/* @font-face {
-  font-family: "GT Maru Mega";
-  src: url("/fonts/GT-Maru-Mega-Mini-Outline.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-} */
-/* @font-face {
-  font-family: "GT Maru Mega";
-  src: url("/fonts/GT-Maru-Mega-Mini-Shaded.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-} */
 
 html {
   scroll-behavior: smooth;
+  font-family: "Maru", sans-serif;
+  font-weight: normal;
 }

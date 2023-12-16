@@ -34,8 +34,8 @@ export default {
         flockyred: "#CE2834",
       },
       fontFamily: {
-        sans: ["GT Maru", "Inter", ...defaultTheme.fontFamily.sans],
-        emoji: ["GT Maru Emoji", "Inter", ...defaultTheme.fontFamily.sans],
+        sans: ["Maru", ...defaultTheme.fontFamily.sans],
+        emoji: ["Maru Emoji", ...defaultTheme.fontFamily.sans],
       },
     },
   },
