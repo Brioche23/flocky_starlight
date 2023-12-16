@@ -1,21 +1,21 @@
 /* Register your custom font family and tell the browser where to find it. */
 @font-face {
   font-family: "GT Maru";
-  src: url("/fonts/GT-Maru-Medium.woff") format("woff");
+  src: url("../public/fonts/GT-Maru-Medium.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "GT Maru";
-  src: url("/fonts/GT-Maru-Bold.woff") format("woff");
+  src: url("../public/fonts/GT-Maru-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "GT MaruEmoji";
-  src: url("/fonts/GT Maru Emoji Black White..woff2") format("woff2");
+  font-family: "GT Maru Emoji";
+  src: url("../public/fonts/GT Maru Emoji Black White.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
