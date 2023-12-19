@@ -56,7 +56,7 @@ After an initial desk research phase, we conducted interviews with individuals d
 ![Intreviewees](../../../assets/img/01_research/05.png)
 _Fig. 1.5 – The people we interviewed_
 
-https://www.figma.com/embed?embed_host=notion&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FUTkDIgZWIjtKdC09k3eOOx%2FFDS-%7C-Website%3Ftype%3Ddesign%26node-id%3D191-1506%26mode%3Ddesign%26t%3DVdBQ1izPf1gklZxv-11
+[Link to the Empathy Maps](https://www.figma.com/embed?embed_host=notion&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FUTkDIgZWIjtKdC09k3eOOx%2FFDS-%7C-Website%3Ftype%3Ddesign%26node-id%3D191-1506%26mode%3Ddesign%26t%3DVdBQ1izPf1gklZxv-11)
 
 The pain points mentioned in the interview were matching with our literature research, as the interviewees mentioned they struggle with their social relationships, found the sensory input overwhelming, and appreciate patience and understanding in communication and hobbies to release energy.
 

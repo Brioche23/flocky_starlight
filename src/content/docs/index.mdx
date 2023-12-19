@@ -17,7 +17,7 @@ hero:
       icon: document
 ---
 
-import { Card, CardGrid } from "@astrojs/starlight/components";
+import { Card, LinkCard } from "@astrojs/starlight/components";
 import Bubble from "../../components/Bubble.astro";
 
  <Card title="Abstract" icon="open-book">
@@ -39,8 +39,8 @@ import Bubble from "../../components/Bubble.astro";
 
   </Card>
  <Card title="Context" icon="magnifier">
- ![The Flocky Team](../../assets/img/Flocky_Team.png)
-_The Flocky team at RunChallenge, ready to run_
+ {/* ![The Flocky Team](../../assets/img/Flocky_Team.png)
+_The Flocky team at RunChallenge, ready to run_ */}
 
 For the development of this project, we worked within the context of RunChallenge, an inclusive running club with branches all over Italy. They organize running sessions for people with every kind of ability, going from a slow walk to an actual professional jog.
 
@@ -68,3 +68,5 @@ The idea is to create a real-time tracking system of the group (the flock) that 
 The data gathered can also be used to better plan each training according to the group effort and, on a higher level, they can be used to validate the association’s activity towards sponsors.
 
   </Card>
+
+<LinkCard title="Start from the Research" href="/guides/01-research/" />
