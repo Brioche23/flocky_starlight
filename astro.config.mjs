@@ -22,9 +22,7 @@ export default defineConfig({
         "./src/styles/custom.css",
       ],
       customCss: ["./src/tailwind.css"],
-      social: {
-        github: "https://github.com/withastro/starlight",
-      },
+      social: {},
       sidebar: [
         {
           label: "Chapters",
