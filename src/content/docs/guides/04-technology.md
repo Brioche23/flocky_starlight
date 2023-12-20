@@ -1,5 +1,5 @@
 ---
-title: Technology
+title: Tech Development
 description: What kind of technical magic lies beneath the Flocky system?
 ---
 
@@ -38,25 +38,25 @@ Starting from the Smart Band it was clear that the system had to be wearable, ye
 
 The application for the trainer meanwhile had to be the control center where to check in real-time the status of the runner, fatigue, and position, but also track performance for tracking and planning the workouts.
 
-![Fig. 5.1 – Key design features of each touchpoint and corresponding enabling technology](../../../assets/img/05_technology/01.png)
-_Fig. 5.1 – Key design features of each touchpoint and corresponding enabling technology_
+![Fig 4.1 – Key design features of each touchpoint and corresponding enabling technology](../../../assets/img/05_technology/01.png)
+_Fig 4.1 – Key design features of each touchpoint and corresponding enabling technology_
 
 ## How does it work?
 
 The Flocky ecosystem relies on the interconnection of the mesh of smart bands with the application of the trainer, at the core this is possible by exploiting the coexistence of Bluetooth and WiFi.
 
-![Fig. 5.2 – Smartband components architecture and section view of the internal components setup](../../../assets/img/05_technology/02.png)
-_Fig. 5.2 – Smartband components architecture and section view of the internal components setup_
+![Fig 4.2 – Smartband components architecture and section view of the internal components setup](../../../assets/img/05_technology/02.png)
+_Fig 4.2 – Smartband components architecture and section view of the internal components setup_
 
 Bluetooth is used to create a peer-to-peer network between the smart bands to track each other proximity, while the WiFi connection through the MQTT protocol is used to transmit relevant data, like notifications on the runners’ status, to the trainer’s device. Finally, all the tracked data is uploaded from the trainer device to a cloud database, so it would be possible to access, monitor, and plan workouts.
 
-![Fig. 5.3 – Communication Protocol Model](../../../assets/img/05_technology/03.png)
-_Fig. 5.3 – Communication Protocol Model_
+![Fig 4.3 – Communication Protocol Model](../../../assets/img/05_technology/03.png)
+_Fig 4.3 – Communication Protocol Model_
 
 The positioning system works by combining the GPS tracking on the trainer’s device and the relative coordinate system obtained from the triangulation of the proximity of the smart bands.
 
-![Fig. 5.4 – Abstraction of Position calculation](../../../assets/img/05_technology/04.png)
-_Fig. 5.4 – Abstraction of Position calculationZ_
+![Fig 4.4 – Abstraction of Position calculation](../../../assets/img/05_technology/04.png)
+_Fig 4.4 – Abstraction of Position calculationZ_
 
 ```jsx
 import trilat from "trilat/index.js";
@@ -106,15 +106,26 @@ export const locate = (beacon, stations, px_meter) => {
 };
 ```
 
-_Fig. 5.5 – Code for triangulation between three devices_
+_Fig 4.5 – Code for triangulation between three devices_
 
 Particular attention has been dedicated to finding the right amount of attention-grabbing feedback while still maintaining a non-disruptive experience.
 
-![Fig. 5.6 – Matrix of the Events Feedback](../../../assets/img/05_technology/05.png)
-_Fig. 5.6 – Matrix of the Events Feedback_
+![Fig 4.6 – Matrix of the Events Feedback](../../../assets/img/05_technology/05.png)
+_Fig 4.6 – Matrix of the Events Feedback_
 
-![Fig. 5.7 – Choreography model of the interaction with Flocky from the perspective of the Trainer and the Runner](../../../assets/img/05_technology/06.png)
-_Fig. 5.7 – Choreography model of the interaction with Flocky from the perspective of the Trainer and the Runner_
+![Fig 4.7 – Choreography model of the interaction with Flocky from the perspective of the Trainer and the Runner](../../../assets/img/05_technology/06.png)
+_Fig 4.7 – Choreography model of the interaction with Flocky from the perspective of the Trainer and the Runner_
+
+## Protopie Connections
+
+![All Screens_Flocky.jpg](../../../assets/img/03_prototype/08.jpg)
+_Fig. 4.8 – Protopie Connections_
+
+Protopie and Protopie Connect were used to carry out a demo of the final experience to test the MVP and the experience while using it.
+
+Commonly, interfaces are imported to take advantage of the advanced prototyping tools, we thought outside the box.
+
+We projected a presentation with instructions and information and a video of the running experience with Flocky to make users roleplay in the scenario, during the video some events are triggered, and commands are sent to the Flocky smart band that will send the corresponding feedback.
 
 ## Potentiality of this Technology
 
@@ -126,5 +137,5 @@ Effectively, this method is already used in the case of American Football, where
 
 The great advantage of Flocky is its versatility, being implementable in any location, and not requiring fixed detectors.
 
-![Untitled](../../../assets/img/05_technology/07.png)
-_Fig. 5.8 – Potential applications of the Flocky technology_
+![Applications](../../../assets/img/05_technology/07.png)
+_Fig 4.8 – Potential applications of the Flocky technology_
