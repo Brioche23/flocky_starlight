@@ -8,9 +8,6 @@ description: Every good project starst with a lot of research.
 **Natural Interactions**:
 Creating a delightful user experience through naturalness.
 
-**City for All**:
-Addressing the challenges of citizens in a smart environment.
-
 ### Natural Interaction
 
 _How did we interpret this concept?_
@@ -34,8 +31,6 @@ In our research, we decided to put a particular emphasis on ASD. We've learned t
 
 Furthermore, our research has led us to examine the impact of sports and physical activities on individuals with ASD. We've found compelling evidence that sports can greatly improve motor skills, enhance social interactions, and positively affect mental health for those on the spectrum. These findings highlight the importance of sports as not only a means of physical development but also as a valuable tool for social and skill development, crucial for the overall well-being of individuals with ASD.
 
-**All is for kids not adults**
-
 ### Digital Ethnography
 
 Using more than 20,000 comments from YouTube videos related to ASD, keywords were taken out to analyze and then understand the thinking and perception of people. This was then categorized to better understand the issues faced and the design intervention possibilities.
@@ -44,10 +39,10 @@ Using more than 20,000 comments from YouTube videos related to ASD, keywords wer
 _Fig. 1.2 – Word Cloud_
 
 ![Methodology](../../../assets/img/01_research/03.png)
-_Fig. 1.3 – _
+_Fig. 1.3 – Semantic analysis of the terms_
 
 ![Methodology](../../../assets/img/01_research/04.png)
-_Fig. 1.4 – _
+_Fig. 1.4 – Hints and insights of the digital ethnography_
 
 ### Interviews
 
@@ -63,8 +58,6 @@ The pain points mentioned in the interview were matching with our literature res
 A common point that was mentioned in the interviews was that most of the interventions, support systems, and therapy sessions are usually organized for children, and less for young adults or adults. As we identified this gap, we decided to mainly focus on young adults and adults.
 
 ## Field Observation (PlayMore! visit)
-
-(PLAYMORE OBSERVATIONS & PICZZ)
 
 ### What is _PlayMore!_?
 
