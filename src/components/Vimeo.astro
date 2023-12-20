@@ -1,9 +1,9 @@
 ---
-const {vimeoId, } = Astro.props;
+const {vimeoId, controls } = Astro.props;
 
 ---
 
-<astro-vimeo data-message={vimeoId}>
+<astro-vimeo data-message={vimeoId} data-controls={controls}>
 
     <div id={vimeoId} class="video-wrapper relative bg-flockyred rounded-xl mt-5">
       <!-- <button class="play-button absolute top-5 right-5 z-10 text-xs rounded-md">PAUSE</button> -->
@@ -26,6 +26,7 @@ const {vimeoId, } = Astro.props;
       super();
 
       const message = this.dataset.message;
+      const controls = this.dataset.controls;
 
       const options = {
         id: message,
@@ -35,7 +36,7 @@ const {vimeoId, } = Astro.props;
         autoplay:1,
         autopause:0,
         title:0,
-        controls:0,
+        controls:controls,
         responsive: 1,
         width: 480
     };

@@ -1,5 +1,5 @@
 ---
-title: Next Steps & Conclusions
+title: Next Steps
 description: What future holds for this projects
 ---
 
